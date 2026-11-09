@@ -32,4 +32,21 @@ void loop() {
   display.setCursor(20,4);
   display.print("SYSTEM TIMER");
   display.drawLine(0, 14, 128, 14, SSD1306_WHITE);
+
+  //draw main display timer
+  display.setTextSize(2);
+  display.setCursor(12,30);
+
+  if (minutes < 10) display.print("0");
+  display.print(minutes);
+  display.print(":");
+
+  if (seconds< 10) display.print("0");
+  display.print(seconds);
+  display.print(".");
+  display.print(tenths);
+
+  //push the stuff to the screen
+  display.Display();
+  delay(50); //write every 50ms
 }
