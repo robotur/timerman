@@ -1,6 +1,7 @@
 # timerman
 Desk timer for locking in
 
+*for HC Phantom*
 # Overview
 timerman is a desk timer with no distractions that you can customize however you want.
 
